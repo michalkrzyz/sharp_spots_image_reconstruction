@@ -36,6 +36,17 @@ Following algorithm shall be implemented:
 
 Sobel filter shall be used for an edge detection, the best sharppness of spot shall be detected by the value of sobel and it's close neighbours.
 
+Dependency
+==========
+
+* ***libpng16***
+* ***libpng++-dev***
+* ***pyghon3-cogapp***
+* ***pyghon3-scipy***
+* ***pyghon3-numpy***
+* ***Catch2***
+* ***hippomocks***
+
 Directories
 ===========
 

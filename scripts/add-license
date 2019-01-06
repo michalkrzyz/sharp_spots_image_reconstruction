@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # BSD 3-Clause License
 # 
 # Copyright (c) 2019, michalkrzyz
@@ -28,25 +30,23 @@
 # OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 # OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-#!/bin/bash
-
 set -e
 
-HASH_COMMENT_FILES=`find -iname "CMakeLists.txt" -or -iname "*.sh"`
+HASH_COMMENT_FILES=`find -iname "CMakeLists.txt" -or -iname "*.sh" -or -iname "*.py"`
 CSTYLE_COMMENT_FILES=`find -iname "*.h" -or -iname "*.hpp" -or -iname "*.cpp" -or -iname "*.c"`
 
 TMPFILE=/tmp/LICENSEDFILE.tmp
 
 cat_hash_comment_license_and_args()
 {
-  cat $PWD/LICENSE | sed 's@^@# @g'
+  cat $PWD/LICENSE | sed 's@^@#@g'
   echo
   [ $# -gt 0 ] && cat $@
 }
 
 cat_cstyle_comment_license_and_args()
 {
-  cat $PWD/LICENSE | sed 's@^@// @g'
+  cat $PWD/LICENSE | sed 's@^@//@g'
   echo
   [ $# -gt 0 ] && cat $@
 }
