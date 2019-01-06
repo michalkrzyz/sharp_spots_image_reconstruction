@@ -27,21 +27,22 @@ Application should handle n images passed via argument line
 Following algorithm shall be implemented:
 1. Read all images to buffers.
 2. For each image:
-..1. Create gray-scale 8-bit image.
-..2. Use Sobel mask to convert gray-scale image to 8-bit Sobel image (N, S, W, E, NW, NE, SW, SE).
-..3. Use N x N Gaussian mask to convert Sobel image to Gaussian one.
++ Create gray-scale 8-bit image.
++ Use Sobel mask to convert gray-scale image to 8-bit Sobel image (N, S, W, E, NW, NE, SW, SE).
++ Use N x N Gaussian mask to convert Sobel image to Gaussian one.
 3. For each pixel of output image:
-..1. Iterate through all images to find biggest value of Gaussian images.
-..2. Origin value of pixel for greates Gaussian pixel value shall be taken to create pixel of output image.
++ Iterate through all images to find biggest value of Gaussian images.
++ Origin value of pixel for greates Gaussian pixel value shall be taken to create pixel of output image.
 
 Sobel filter shall be used for an edge detection, the best sharppness of spot shall be detected by the value of sobel and it's close neighbours.
 
 Directories
 ===========
 
-... *app/* - main and cmake for application
-... *poc/* - just a proof of concept
-... *scripts/* - some automation added as helpers
-... *src/* - sources of app libraries
-... *res/* - images (3rd party images are excluded)
-... *tests/* - unittests
+* ***app/*** - main and cmake for application
+* ***poc/*** - just a proof of concept
+* ***scripts/*** - some automation added as helpers
+* ***src/*** - sources of app libraries
+* ***res/*** - images (3rd party images are excluded)
+* ***tests/*** - unittests
+
