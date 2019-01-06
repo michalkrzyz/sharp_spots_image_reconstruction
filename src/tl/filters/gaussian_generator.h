@@ -28,8 +28,8 @@
 // OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 // OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-#ifndef TL_FILTER_GAUSSIAN_H
-#define TL_FILTER_GAUSSIAN_H
+#ifndef TL_FILTERS_GAUSSIAN_H
+#define TL_FILTERS_GAUSSIAN_H
 
 // To generate tl::fitler::GAUSSIAN use following command:
 // python -m cogapp -d -e -ogaussian.h -DN=25 -DNSIG=2 gaussian_generator.h
@@ -79,4 +79,4 @@ for y in g:
 }
 }
 
-#endif // TL_GAUSSIAN_H
+#endif // TL_FILTERS_GAUSSIAN_H

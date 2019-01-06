@@ -31,6 +31,7 @@
 #include <iostream>
 #include <vector>
 
+#include <tl/Exception.h>
 #include <tl/sharp_spots_image_reconstruction.h>
 #include <utils/time_measure.h>
 

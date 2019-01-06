@@ -33,7 +33,9 @@
 
 #include <png++/png.hpp>
 
+#include <tl/Filter.h>
 #include <tl/sharp_spots_image_reconstruction.h>
+#include <utils/bound.h>
 
 namespace tl
 {
@@ -96,4 +98,4 @@ Gray_image create_gray_depth_image_from_ordered_sharp_spots_masks(const Gray_ima
 
 using namespace tl::internal;
 
-#endif // TL_SHARP_SPOTS_IMAGE_RECONSTRUCTION_H
+#endif // TL_SHARP_SPOTS_IMAGE_RECONSTRUCTION_INTERNAL_H

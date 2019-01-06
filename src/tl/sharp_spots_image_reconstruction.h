@@ -31,16 +31,7 @@
 #ifndef TL_SHARP_SPOTS_IMAGE_RECONSTRUCTION_H
 #define TL_SHARP_SPOTS_IMAGE_RECONSTRUCTION_H
 
-#include <algorithm>
 #include <vector>
-
-#include <png++/png.hpp>
-
-#include <tl/Exception.h>
-#include <tl/Filter.h>
-#include <tl/filters/common.h>
-#include <tl/filters/gaussian.h>
-#include <utils/bound.h>
 
 namespace tl
 {
