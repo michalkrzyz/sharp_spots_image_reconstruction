@@ -1,5 +1,3 @@
-This project was inspired by company I am trying to be hired in.
-
 Task description
 ================
 
